@@ -42,7 +42,7 @@ body {
   position: relative;
   width: 720px;
   height: 254px;
-  padding: 45px 60px;
+  padding: 32px 60px 40px;
   background: rgba(255, 255, 255, 0.92);
   border-radius: 18px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.25);
@@ -50,15 +50,27 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-
   z-index: 1;
 }
+
+/* Título fixo */
+.titulo {
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 14px;
+  font-weight: 500;
+
+  margin-left: 0.2cm; /* desloca o título 0,2cm para a direita */
+}
+
 
 /* Imagem do pensador SOBRE a caixa */
 .pensador {
   position: absolute;
   top: -22px;
-  left: -10.00px; /* 0,3cm mais à direita */
+  left: -10px; /* 0,3cm mais à direita */
   width: 90px;
   opacity: 0.9;
   pointer-events: none;
@@ -115,6 +127,7 @@ body {
     alt="Pensador">
 
   <div class="card">
+    <div class="titulo">Reflexão Diária</div>
     <div class="frase" id="frase"></div>
     <div class="autor" id="autor"></div>
   </div>
@@ -122,6 +135,7 @@ body {
 
 <script>
 const frases = [
+
 
   // —— FILÓSOFOS CLÁSSICOS ——
 
